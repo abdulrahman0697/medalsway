@@ -14,12 +14,12 @@
   }
 
   var AWARDS = [
-    { ar: "برنامج دبي للأداء الحكومي المتميز", en: "Dubai Government Excellence Program (DGEP)", lvlAr: "إمارة دبي", lvlEn: "Dubai", abbr: "DGEP" },
-    { ar: "جائزة الشيخ خليفة للامتياز", en: "Sheikh Khalifa Excellence Award (SKEA)", lvlAr: "وطني", lvlEn: "National", abbr: "SKEA" },
-    { ar: "جائزة أبوظبي للأداء الحكومي المتميز", en: "Abu Dhabi Award for Excellence in Government Performance", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", abbr: "ADAEP" },
+    { ar: "برنامج دبي للأداء الحكومي المتميز", en: "Dubai Government Excellence Program (DGEP)", lvlAr: "إمارة دبي", lvlEn: "Dubai", sym: "lg-dgep", vb: "0 0 360 268" },
+    { ar: "جائزة الشيخ خليفة للامتياز", en: "Sheikh Khalifa Excellence Award (SKEA)", lvlAr: "وطني", lvlEn: "National", sym: "lg-skea", vb: "0 0 240 240" },
+    { ar: "جائزة أبوظبي للأداء الحكومي المتميز", en: "Abu Dhabi Award for Excellence in Government Performance", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", sym: "lg-adaep", vb: "0 0 480 200" },
     { ar: "جائزة القائد العام لشرطة دبي للتميز", en: "Dubai Police Commander-General Award for Excellence", lvlAr: "شرطة دبي", lvlEn: "Dubai Police", logo: "dubaipolice.png", light: true },
     { ar: "جائزة وزير الداخلية للتميز", en: "Minister of Interior Excellence Award", lvlAr: "اتحادي", lvlEn: "Federal", logo: "moi.png", light: true },
-    { ar: "جائزة أبوظبي للتميز في دمج أصحاب الهمم", en: "Abu Dhabi Excellence Award for People of Determination Inclusion", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", abbr: "دمج" },
+    { ar: "جائزة أبوظبي للتميز في دمج أصحاب الهمم", en: "Abu Dhabi Excellence Award for People of Determination Inclusion", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", sym: "lg-damj", vb: "0 0 460 200" },
     { ar: "جوائز التميز الداخلية للجهات", en: "Entities' Internal Excellence Awards", lvlAr: "داخلي", lvlEn: "Internal" },
     { ar: "جوائز الناموس — ديوا وهيئة الطرق والمواصلات", en: "Namous Awards — DEWA & RTA", lvlAr: "داخلي", lvlEn: "Internal" }
   ];
@@ -92,6 +92,9 @@
       if (a.logo) {
         logoHTML = '<div class="award-logo' + (a.light ? " on-light" : "") + '">' +
           '<img loading="lazy" src="' + logoSrc(a.logo) + '" alt="' + (isEN ? a.en : a.ar) + '"></div>';
+      } else if (a.sym) {
+        logoHTML = '<div class="award-logo on-light">' +
+          '<svg viewBox="' + a.vb + '" style="max-height:88px;max-width:86%" role="img" aria-label="' + (isEN ? a.en : a.ar) + '"><use href="#' + a.sym + '"/></svg></div>';
       } else {
         logoHTML = '<div class="award-logo">' + emblemHTML(a.abbr) + "</div>";
       }
