@@ -14,14 +14,14 @@
   }
 
   var AWARDS = [
-    { ar: "برنامج دبي للأداء الحكومي المتميز", en: "Dubai Government Excellence Program (DGEP)", lvlAr: "إمارة دبي", lvlEn: "Dubai", logo: "dgep", light: true },
-    { ar: "جائزة الشيخ خليفة للامتياز", en: "Sheikh Khalifa Excellence Award (SKEA)", lvlAr: "وطني", lvlEn: "National", logo: "skea", light: true },
-    { ar: "جائزة أبوظبي للأداء الحكومي المتميز", en: "Abu Dhabi Award for Excellence in Government Performance", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", logo: "adaep", light: true },
-    { ar: "جائزة القائد العام لشرطة دبي للتميز", en: "Dubai Police Commander-General Award for Excellence", lvlAr: "شرطة دبي", lvlEn: "Dubai Police", logo: "dubaipolice", light: true },
-    { ar: "جائزة وزير الداخلية للتميز", en: "Minister of Interior Excellence Award", lvlAr: "اتحادي", lvlEn: "Federal", logo: "moi", light: true },
-    { ar: "جائزة أبوظبي للتميز في دمج أصحاب الهمم", en: "Abu Dhabi Excellence Award for People of Determination Inclusion", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", logo: "adaep_pod", light: true },
-    { ar: "جوائز التميز الداخلية للجهات", en: "Entities' Internal Excellence Awards", lvlAr: "داخلي", lvlEn: "Internal", logo: null },
-    { ar: "جوائز الناموس — ديوا وهيئة الطرق والمواصلات", en: "Namous Awards — DEWA & RTA", lvlAr: "داخلي", lvlEn: "Internal", logo: null }
+    { ar: "برنامج دبي للأداء الحكومي المتميز", en: "Dubai Government Excellence Program (DGEP)", lvlAr: "إمارة دبي", lvlEn: "Dubai", abbr: "DGEP" },
+    { ar: "جائزة الشيخ خليفة للامتياز", en: "Sheikh Khalifa Excellence Award (SKEA)", lvlAr: "وطني", lvlEn: "National", abbr: "SKEA" },
+    { ar: "جائزة أبوظبي للأداء الحكومي المتميز", en: "Abu Dhabi Award for Excellence in Government Performance", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", abbr: "ADAEP" },
+    { ar: "جائزة القائد العام لشرطة دبي للتميز", en: "Dubai Police Commander-General Award for Excellence", lvlAr: "شرطة دبي", lvlEn: "Dubai Police", logo: "dubaipolice.png", light: true },
+    { ar: "جائزة وزير الداخلية للتميز", en: "Minister of Interior Excellence Award", lvlAr: "اتحادي", lvlEn: "Federal", logo: "moi.png", light: true },
+    { ar: "جائزة أبوظبي للتميز في دمج أصحاب الهمم", en: "Abu Dhabi Excellence Award for People of Determination Inclusion", lvlAr: "أبوظبي", lvlEn: "Abu Dhabi", abbr: "دمج" },
+    { ar: "جوائز التميز الداخلية للجهات", en: "Entities' Internal Excellence Awards", lvlAr: "داخلي", lvlEn: "Internal" },
+    { ar: "جوائز الناموس — ديوا وهيئة الطرق والمواصلات", en: "Namous Awards — DEWA & RTA", lvlAr: "داخلي", lvlEn: "Internal" }
   ];
 
   var MEDALS = [
@@ -37,17 +37,17 @@
   ];
 
   var CLIENTS = [
-    { ar: "هيئة كهرباء ومياه دبي", en: "Dubai Electricity & Water Authority (DEWA)", logo: "dewa" },
-    { ar: "هيئة الطرق والمواصلات", en: "Roads & Transport Authority (RTA)", logo: "rta" },
-    { ar: "القيادة العامة لشرطة أبوظبي", en: "Abu Dhabi Police GHQ", logo: "adpolice" },
-    { ar: "وزارة الخارجية", en: "Ministry of Foreign Affairs", logo: "mofa" },
-    { ar: "وزارة الصحة ووقاية المجتمع", en: "Ministry of Health & Prevention", logo: "moh" },
-    { ar: "الاتحادية للماء والكهرباء", en: "Etihad Water & Electricity", logo: "etihadwe" },
-    { ar: "هيئة البيئة — أبوظبي", en: "Environment Agency — Abu Dhabi", logo: "ead" },
-    { ar: "شركة أبوظبي الوطنية للمعارض (أدنيك)", en: "ADNEC Group", logo: "adnec" },
-    { ar: "دائرة التنمية الاقتصادية", en: "Department of Economic Development", logo: "ded" },
-    { ar: "دائرة الأراضي والأملاك", en: "Dubai Land Department", logo: "dld" },
-    { ar: "دائرة النقل", en: "Department of Transport", logo: "dot" }
+    { ar: "هيئة كهرباء ومياه دبي", en: "Dubai Electricity & Water Authority (DEWA)", logo: "dewa.png" },
+    { ar: "هيئة الطرق والمواصلات", en: "Roads & Transport Authority (RTA)", logo: "rta.png" },
+    { ar: "القيادة العامة لشرطة أبوظبي", en: "Abu Dhabi Police GHQ", logo: "adpolice.png" },
+    { ar: "وزارة الخارجية", en: "Ministry of Foreign Affairs", logo: "mofa.png" },
+    { ar: "وزارة الصحة", en: "Ministry of Health", logo: "moh.png" },
+    { ar: "الاتحادية للماء والكهرباء", en: "Etihad Water & Electricity", logo: "etihadwe.png" },
+    { ar: "هيئة البيئة — أبوظبي", en: "Environment Agency — Abu Dhabi", logo: "ead.svg" },
+    { ar: "شركة أبوظبي الوطنية للمعارض (أدنيك)", en: "ADNEC Group", logo: "adnec.png" },
+    { ar: "دائرة التنمية الاقتصادية", en: "Department of Economic Development", logo: "ded.svg" },
+    { ar: "دائرة الأراضي والأملاك", en: "Dubai Land Department", logo: "dld.png" },
+    { ar: "دائرة النقل", en: "Department of Transport", logo: "dot.png" }
   ];
 
   var isEN = false;
@@ -55,8 +55,20 @@
   /* ----------------------------------------------------------
      Fallback emblem for missing logos
      ---------------------------------------------------------- */
-  function emblemHTML() {
-    return '<svg viewBox="0 0 270 330" style="height:80px"><use href="#mw-mark"/></svg>';
+  function emblemHTML(abbr) {
+    if (!abbr) {
+      return '<svg viewBox="0 0 270 330" style="height:80px"><use href="#mw-mark"/></svg>';
+    }
+    var isArabic = /[؀-ۿ]/.test(abbr);
+    var fs = abbr.length > 4 ? 21 : 26;
+    var family = isArabic ? "Cairo, sans-serif" : "Outfit, Cairo, sans-serif";
+    return '<svg viewBox="0 0 140 140" style="height:92px" role="img" aria-label="' + abbr + '">' +
+      '<circle cx="70" cy="70" r="56" fill="none" stroke="url(#mwRing)" stroke-width="8"/>' +
+      '<circle cx="70" cy="70" r="47" fill="none" stroke="#7A5210" stroke-width="1" opacity=".5"/>' +
+      '<circle cx="70" cy="70" r="63" fill="none" stroke="#FFE9A8" stroke-width="1" opacity=".4"/>' +
+      '<polygon points="70,34 71.65,38.73 76.66,38.84 72.66,41.87 74.11,46.66 70,43.8 65.89,46.66 67.34,41.87 63.34,38.84 68.35,38.73" fill="url(#mwStarL)" stroke="#8C5E14" stroke-width=".4"/>' +
+      '<text x="70" y="' + (abbr.length > 4 ? 87 : 88) + '" text-anchor="middle" font-family="' + family + '" font-weight="800" font-size="' + fs + '" letter-spacing="' + (isArabic ? 0 : 1) + '" fill="#EFCF6E">' + abbr + "</text>" +
+      "</svg>";
   }
   function attachFallback(img) {
     img.addEventListener("error", function () {
@@ -81,7 +93,7 @@
         logoHTML = '<div class="award-logo' + (a.light ? " on-light" : "") + '">' +
           '<img loading="lazy" src="' + logoSrc(a.logo) + '" alt="' + (isEN ? a.en : a.ar) + '"></div>';
       } else {
-        logoHTML = '<div class="award-logo">' + emblemHTML() + "</div>";
+        logoHTML = '<div class="award-logo">' + emblemHTML(a.abbr) + "</div>";
       }
       card.innerHTML = logoHTML +
         "<h3>" + (isEN ? a.en : a.ar) + "</h3>" +
