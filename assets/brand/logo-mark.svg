@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-135 -135 270 330" role="img" aria-label="Medals Way">
+  <defs>
+    <linearGradient id="mwRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF3C4"/>
+      <stop offset=".45" stop-color="#F0C75E"/>
+      <stop offset="1" stop-color="#A8721C"/>
+    </linearGradient>
+    <linearGradient id="mwRingEdge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C5E14"/>
+      <stop offset="1" stop-color="#E9BE58"/>
+    </linearGradient>
+    <linearGradient id="mwStarL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFEFAF"/>
+      <stop offset="1" stop-color="#E9B949"/>
+    </linearGradient>
+    <linearGradient id="mwStarD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C98F2B"/>
+      <stop offset="1" stop-color="#7A5210"/>
+    </linearGradient>
+    <linearGradient id="mwBanner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2CC6B"/>
+      <stop offset="1" stop-color="#B67F22"/>
+    </linearGradient>
+    <linearGradient id="mwTail" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9BE58"/>
+      <stop offset="1" stop-color="#96650F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ribbon banner -->
+  <path d="M-36 86 L-36 172 L0 145 L36 172 L36 86 Z" fill="url(#mwBanner)"/>
+  <path d="M-36 86 L-36 172 L-29 166.7 L-29 86 Z" fill="#8C5E14" opacity=".45"/>
+  <path d="M36 86 L36 172 L29 166.7 L29 86 Z" fill="#FFEBAE" opacity=".5"/>
+
+  <!-- flowing tails -->
+  <path d="M14 90 C 2 132 -46 144 -92 174" fill="none" stroke="url(#mwTail)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M-8 92 C -14 130 -40 154 -62 184" fill="none" stroke="url(#mwTail)" stroke-width="12" stroke-linecap="round" opacity=".92"/>
+
+  <!-- medal ring -->
+  <circle cx="0" cy="0" r="96" fill="none" stroke="url(#mwRing)" stroke-width="21"/>
+  <circle cx="0" cy="0" r="84.5" fill="none" stroke="#7A5210" stroke-width="2" opacity=".55"/>
+  <circle cx="0" cy="0" r="107.5" fill="none" stroke="#FFE9A8" stroke-width="1.6" opacity=".55"/>
+
+  <!-- faceted star -->
+  <g stroke="#8C5E14" stroke-width=".6" stroke-linejoin="round">
+    <path d="M0 0 L0 -62 L14.69 -20.23 Z" fill="url(#mwStarL)"/>
+    <path d="M0 0 L14.69 -20.23 L58.97 -19.16 Z" fill="url(#mwStarD)"/>
+    <path d="M0 0 L58.97 -19.16 L23.78 7.73 Z" fill="url(#mwStarL)"/>
+    <path d="M0 0 L23.78 7.73 L36.44 50.16 Z" fill="url(#mwStarD)"/>
+    <path d="M0 0 L36.44 50.16 L0 25 Z" fill="url(#mwStarL)"/>
+    <path d="M0 0 L0 25 L-36.44 50.16 Z" fill="url(#mwStarD)"/>
+    <path d="M0 0 L-36.44 50.16 L-23.78 7.73 Z" fill="url(#mwStarL)"/>
+    <path d="M0 0 L-23.78 7.73 L-58.97 -19.16 Z" fill="url(#mwStarD)"/>
+    <path d="M0 0 L-58.97 -19.16 L-14.69 -20.23 Z" fill="url(#mwStarL)"/>
+    <path d="M0 0 L-14.69 -20.23 L0 -62 Z" fill="url(#mwStarD)"/>
+  </g>
+</svg>
